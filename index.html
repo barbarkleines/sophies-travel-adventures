@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sophie · A Blue Merle Pomeranian Who Travels</title>
+    <meta
+      name="description"
+      content="Follow Sophie, a beautiful blue merle Pomeranian, as she travels the world with her family. Stories, photos, and magical moments from the road."
+    />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400&family=Lora:wght@400;500&family=IBM+Plex+Mono:wght@300&display=swap');
+
+      html,
+      body {
+        color: hsl(178, 10%, 26%);
+        background-color: hsl(24, 60%, 97%);
+      }
+    </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Pet",
+        "name": "Sophie",
+        "breed": "Blue Merle Pomeranian",
+        "description": "A blue merle Pomeranian traveling the world with her family, spreading joy."
+      }
+    </script>
+    <link rel="stylesheet" href="globals.css" />
+  </head>
+  <body class="font-sans text-charcoal bg-primary">
+    <!-- Header / Navigation -->
+    <header
+      class="sticky top-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-gray-200"
+    >
+      <nav
+        class="max-w-screen-2xl mx-auto px-8 lg:px-12"
+        aria-label="Main navigation"
+      >
+        <div class="flex items-center justify-between h-24">
+          <div class="font-serif text-2xl font-medium text-charcoal">
+            Sophie
+          </div>
+
+          <!-- Desktop Navigation -->
+          <ul class="hidden md:flex items-center gap-8 text-charcoal">
+            <li>
+              <a
+                href="#story"
+                class="hover:underline transition-all duration-200 cursor-pointer py-3 px-4"
+                >Story</a
+              >
+            </li>
+            <li>
+              <a
+                href="#travels"
+                class="hover:underline transition-all duration-200 cursor-pointer py-3 px-4"
+                >Travels</a
+              >
+            </li>
+            <li>
+              <a
+                href="#gallery"
+                class="hover:underline transition-all duration-200 cursor-pointer py-3 px-4"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="#hello"
+                class="hover:underline transition-all duration-200 cursor-pointer py-3 px-4"
+                >Hello</a
+              >
+            </li>
+          </ul>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden p-3 text-charcoal"
+            aria-label="Toggle mobile menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden bg-primary border-t border-gray-200"
+        >
+          <ul class="flex flex-col py-4 text-charcoal">
+            <li>
+              <a
+                href="#story"
+                class="block py-4 px-6 hover:bg-secondary transition-all duration-200"
+                >Story</a
+              >
+            </li>
+            <li>
+              <a
+                href="#travels"
+                class="block py-4 px-6 hover:bg-secondary transition-all duration-200"
+                >Travels</a
+              >
+            </li>
+            <li>
+              <a
+                href="#gallery"
+                class="block py-4 px-6 hover:bg-secondary transition-all duration-200"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="#hello"
+                class="block py-4 px-6 hover:bg-secondary transition-all duration-200"
+                >Hello</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden"
+      >
+        <div class="absolute inset-0 w-full h-full">
+          <video
+            aria-label="Blue merle Pomeranian Sophie outdoors in travel setting"
+            src="https://c.animaapp.com/mlz6hovhvUMakT/img/ai_1.mp4"
+            poster="https://c.animaapp.com/mlz6hovhvUMakT/img/ai_1-poster.png"
+            class="w-full h-full object-cover"
+            autoplay=""
+            loop=""
+            muted=""
+            playsinline=""
+          ></video>
+          <div
+            class="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/0 to-black/80"
+          ></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+          <h1
+            class="font-serif text-5xl md:text-7xl lg:text-8xl font-medium text-primary mb-6 tracking-headline leading-headline"
+          >
+            Sophie
+          </h1>
+          <h2
+            class="font-serif text-2xl md:text-3xl lg:text-4xl text-primary mb-8 tracking-headline leading-headline"
+          >
+            A blue merle Pomeranian with a well-worn passport
+          </h2>
+          <p
+            class="text-lg md:text-xl text-primary leading-body max-w-2xl mx-auto"
+          >
+            She's sniffin' up the world. This is her story.
+          </p>
+
+          <a
+            href="#story"
+            class="inline-block mt-16 text-primary hover:transform hover:-translate-y-1 transition-all duration-200"
+            aria-label="Scroll to story"
+          >
+            <svg
+              class="w-8 h-8 animate-bounce"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Welcome Section -->
+      <section id="story" class="py-32 md:py-40 px-8 bg-primary">
+        <div class="max-w-screen-2xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+              <h2
+                class="font-serif text-4xl md:text-5xl font-medium text-charcoal tracking-headline leading-headline"
+              >
+                Welcome to Sophie's World
+              </h2>
+              <p class="text-lg text-charcoal leading-body">
+                Sophie isn't just any Pomeranian. With her striking blue merle
+                coat and adventurous spirit, she's traveled to more countries
+                than most humans dream of visiting.
+              </p>
+              <p class="text-lg text-charcoal leading-body">
+                From the sunny patios of Los Angeles to the misty peaks of the
+                Swiss Alps, Sophie has made every destination her own. Her
+                passport is filled with stamps, her heart is filled with
+                memories, and her tail never stops wagging.
+              </p>
+              <p class="text-lg text-charcoal leading-body">
+                Join us as we share the stories, the moments, and the magic of
+                traveling the world with our beloved companion.
+              </p>
+            </div>
+            <div class="order-first md:order-last">
+              <img
+                src="https://c.animaapp.com/mlz6hovhvUMakT/img/ai_2.png"
+                alt="Sophie the Pomeranian looking at camera"
+                class="w-full h-auto rounded-default object-cover shadow-sm"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Moments Section -->
+      <section id="travels" class="py-32 md:py-40 px-8 bg-secondary">
+        <div class="max-w-screen-2xl mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              class="font-serif text-4xl md:text-5xl font-medium text-charcoal tracking-headline leading-headline mb-6"
+            >
+              Favorite Moments
+            </h2>
+            <p class="text-lg text-charcoal leading-body max-w-2xl mx-auto">
+              Every journey brings new adventures. Here are some of Sophie's
+              most cherished memories from around the world.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Los Angeles -->
+            <article class="group">
+              <div class="overflow-hidden rounded-default mb-4">
+                <img
+                  src="https://c.animaapp.com/mlz6hovhvUMakT/img/ai_3.png"
+                  alt="Blue merle Pomeranian Sophie on sunny patio Los Angeles"
+                  class="w-full h-80 object-cover transition-transform duration-200 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="font-serif text-2xl font-medium text-charcoal mb-2">
+                Los Angeles
+              </h3>
+              <p class="text-charcoal leading-body">
+                Sunny days on the patio, soaking up the California warmth and
+                watching the world go by.
+              </p>
+            </article>
+
+            <!-- Card 2: Swiss Alps -->
+            <article class="group">
+              <div class="overflow-hidden rounded-default mb-4">
+                <img
+                  src="https://c.animaapp.com/mlz6hovhvUMakT/img/ai_4.png"
+                  alt="Sophie the Pomeranian in Swiss Alps meadow"
+                  class="w-full h-80 object-cover transition-transform duration-200 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="font-serif text-2xl font-medium text-charcoal mb-2">
+                Swiss Alps
+              </h3>
+              <p class="text-charcoal leading-body">
+                Running through alpine meadows with mountain peaks as a
+                backdrop—pure magic.
+              </p>
+            </article>
+
+            <!-- Card 3: Amalfi Coast -->
+            <article class="group">
+              <div class="overflow-hidden rounded-default mb-4">
+                <img
+                  src="https://c.animaapp.com/mlz6hovhvUMakT/img/ai_5.png"
+                  alt="Sophie the Pomeranian overlooking sea Amalfi Coast"
+                  class="w-full h-80 object-cover transition-transform duration-200 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="font-serif text-2xl font-medium text-charcoal mb-2">
+                Amalfi Coast
+              </h3>
+              <p class="text-charcoal leading-body">
+                Overlooking the sparkling Mediterranean, feeling the sea breeze
+                ruffle her fur.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Note from Sophie's Human -->
+      <section class="py-32 md:py-40 px-8 bg-tertiary">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2
+            class="font-serif text-3xl md:text-4xl font-medium text-charcoal tracking-headline leading-headline mb-8"
+          >
+            From Our Family to Yours
+          </h2>
+          <div class="space-y-6 text-lg text-charcoal leading-body">
+            <p>
+              Traveling with Sophie has taught us that the world is so much
+              bigger—and so much kinder—than we ever imagined. Every new place
+              we visit, she reminds us to slow down, to notice the small things,
+              and to find joy in the simplest moments.
+            </p>
+            <p>
+              Whether she's making friends with locals in a tiny village or
+              curling up in a cozy hotel bed after a long day of exploring,
+              Sophie approaches every experience with curiosity and love.
+            </p>
+            <p>
+              We created this space to share her journey with you, hoping it
+              inspires you to explore the world with your own furry companion—or
+              simply to appreciate the beauty that surrounds us every day.
+            </p>
+          </div>
+          <p class="mt-12 font-serif text-xl text-charcoal italic">
+            — Sophie's family
+          </p>
+        </div>
+      </section>
+
+      <!-- Gallery Preview -->
+      <section id="gallery" class="py-32 md:py-40 px-8 bg-primary">
+        <div class="max-w-screen-2xl mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              class="font-serif text-4xl md:text-5xl font-medium text-charcoal tracking-headline leading-headline mb-6"
+            >
+              Gallery
+            </h2>
+            <p class="text-lg text-charcoal leading-body max-w-2xl mx-auto">
+              A glimpse into Sophie's adventures through the lens.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div class="overflow-hidden rounded-default group">
+              <img
+                src="https://c.animaapp.com/mlz6hovhvUMakT/img/ai_6.png"
+                alt="Sophie the Pomeranian on glamorous trip"
+                class="w-full aspect-square object-cover transition-transform duration-200 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+            <div class="overflow-hidden rounded-default group">
+              <img
+                src="https://c.animaapp.com/mlz6hovhvUMakT/img/ai_7.png"
+                alt="Sophie the Pomeranian sleeping in hotel bed"
+                class="w-full aspect-square object-cover transition-transform duration-200 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+            <div class="overflow-hidden rounded-default group md:col-span-2">
+              <img
+                src="https://c.animaapp.com/mlz6hovhvUMakT/img/ai_8.png"
+                alt="Sophie the Pomeranian playing at home"
+                class="w-full aspect-square md:aspect-[2/1] object-cover transition-transform duration-200 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a
+              href="#gallery"
+              class="inline-block text-lg text-charcoal hover:underline transition-all duration-200"
+              >See more of Sophie →</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Kind Words (Testimonials) -->
+      <section class="py-32 md:py-40 px-8 bg-secondary">
+        <div class="max-w-screen-2xl mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              class="font-serif text-4xl md:text-5xl font-medium text-charcoal tracking-headline leading-headline mb-6"
+            >
+              Kind Words
+            </h2>
+            <p class="text-lg text-charcoal leading-body max-w-2xl mx-auto">
+              What people say about Sophie and her adventures.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <article
+              class="bg-primary p-8 rounded-default border border-gray-200"
+            >
+              <p class="text-charcoal leading-body mb-4 italic">
+                "Sophie has the most beautiful spirit. Every photo captures her
+                joy and curiosity. Following her travels brightens my day!"
+              </p>
+              <p class="text-charcoal font-medium">— Maria, Barcelona</p>
+            </article>
+
+            <article
+              class="bg-primary p-8 rounded-default border border-gray-200"
+            >
+              <p class="text-charcoal leading-body mb-4 italic">
+                "I've never seen a dog with such wanderlust. Sophie inspires me
+                to explore more with my own pup. Thank you for sharing!"
+              </p>
+              <p class="text-charcoal font-medium">— James, London</p>
+            </article>
+
+            <article
+              class="bg-primary p-8 rounded-default border border-gray-200"
+            >
+              <p class="text-charcoal leading-body mb-4 italic">
+                "The way Sophie experiences the world reminds us all to slow
+                down and appreciate the little things. Pure magic."
+              </p>
+              <p class="text-charcoal font-medium">— Yuki, Tokyo</p>
+            </article>
+          </div>
+
+          <p class="text-center text-lg text-charcoal leading-body">
+            Thank you for following along on Sophie's journey. Your support
+            means the world to us.
+          </p>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section id="hello" class="py-32 md:py-40 px-8 bg-primary">
+        <div class="max-w-3xl mx-auto">
+          <div class="bg-neutral p-12 md:p-16 rounded-[24px]">
+            <div class="text-center mb-8">
+              <h2
+                class="font-serif text-3xl md:text-4xl font-medium text-charcoal tracking-headline leading-headline mb-4"
+              >
+                Stay Connected
+              </h2>
+              <p class="text-lg text-charcoal leading-body">
+                Join Sophie's mailing list for updates on her latest adventures,
+                travel tips, and exclusive photos.
+              </p>
+            </div>
+
+            <form class="space-y-4" aria-label="Newsletter signup form">
+              <div>
+                <label for="email" class="sr-only">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required=""
+                  class="w-full px-6 py-4 rounded-default border border-gray-300 text-charcoal bg-primary focus:outline-none focus:ring-2 focus:ring-secondary transition-all duration-200"
+                />
+              </div>
+              <button
+                type="submit"
+                class="w-full px-8 py-4 bg-charcoal text-primary font-normal rounded-default hover:bg-gray-800 hover:transform hover:-translate-y-0.5 transition-all duration-200 ease-in-out"
+              >
+                Subscribe
+              </button>
+            </form>
+
+            <p class="text-sm text-charcoal text-center mt-6 leading-body">
+              We respect your privacy. Unsubscribe anytime.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-20 px-8 bg-primary border-t border-gray-200">
+      <div class="max-w-screen-2xl mx-auto">
+        <div class="text-center space-y-8">
+          <div>
+            <p class="font-serif text-2xl font-medium text-charcoal mb-2">
+              Sophie
+            </p>
+            <p class="text-charcoal">🐾</p>
+          </div>
+
+          <nav aria-label="Footer navigation">
+            <ul class="flex flex-wrap justify-center gap-6 text-charcoal">
+              <li>
+                <a
+                  href="#story"
+                  class="hover:underline transition-all duration-200"
+                  >Story</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#travels"
+                  class="hover:underline transition-all duration-200"
+                  >Travels</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="hover:underline transition-all duration-200"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#hello"
+                  class="hover:underline transition-all duration-200"
+                  >Hello</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="flex justify-center gap-6">
+            <a
+              href="#"
+              class="text-charcoal hover:text-gray-700 transition-all duration-200"
+              aria-label="Instagram"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="text-charcoal hover:text-gray-700 transition-all duration-200"
+              aria-label="Facebook"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <p class="text-sm text-charcoal">
+            © 2024 Sophie. Made with love, always.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuButton.addEventListener('click', () => {
+        const isExpanded =
+          mobileMenuButton.getAttribute('aria-expanded') === 'true';
+        mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when clicking a link
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          mobileMenuButton.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // Highlight active section in navigation
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+      function highlightNavigation() {
+        let current = '';
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (window.scrollY >= sectionTop - 100) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove('underline');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('underline');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', highlightNavigation);
+      highlightNavigation();
+    </script>
+  </body>
+</html>
